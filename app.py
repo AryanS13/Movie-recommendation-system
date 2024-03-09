@@ -6,7 +6,7 @@ from tmdbv3api import Movie
 from requests.exceptions import Timeout
 import time
 
-TMDB_API_KEY = '537533250b86a80fe3e199d111e4c90e' #st.secrets["TMDB_API_KEY"]
+TMDB_API_KEY = st.secrets["TMDB_API_KEY"]
 
 movie = Movie()
 my_bar = st.progress(0, text='')
